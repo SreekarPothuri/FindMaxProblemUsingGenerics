@@ -6,9 +6,12 @@ public class FindMaximum {
 		return o1.compareTo(o2);
 	}
 
+	public float compare(Float o1, Float o2) {
+		return o1.compareTo(o2);
+	}
+
 	public static int maxInt(Integer a, Integer b, Integer c) {
 		int max = a;
-
 		if (b.compareTo(a) > 0)
 			max = b;
 		if (c.compareTo(b) > 0)
@@ -16,8 +19,18 @@ public class FindMaximum {
 		return max;
 	}
 
+	public static float maxFloat(Float a, Float b, Float c) {
+		float max = a;
+		if (b.compareTo(a) > 0.0)
+			max = b;
+		if (c.compareTo(b) > 0.0)
+			max = c;
+		return max;
+	}
+
 	public static void main(String[] args) {
 		System.out.println("*****WELCOME TO FIND MAXIMUM PROBLEM*****");
 		System.out.println("Max int: " + maxInt(777, 8888, 200000));
+		System.out.println("Max float: " + maxFloat(7.056f, 88.88f, 20.000f));
 	}
 }
