@@ -18,19 +18,19 @@ public class TestFindMaximum {
 
 	@Test
 	public void testMaximumAtFirstPosition_testAssertionHappy() {
-		int result = maxi.maxInt(100, 20, 3);
-		Assert.assertEquals(100,result);
+		Integer result = maxi.maxInt(100, 20, 3);
+		Assert.assertEquals(Integer.valueOf(100),result);
 	}
 	
 	@Test
 	public void testMaximumAtSecondPosition_testAssertionHappy() {
-		int result = maxi.maxInt(10, 20, 3);
-		Assert.assertEquals(20,result);
+		Integer result = maxi.maxInt(10, 20, 3);
+		Assert.assertEquals(Integer.valueOf(20),result);
 	}
 	
 	@Test
 	public void testMaximumAtThirdPosition_testAssertionHappy() {
-		int result = maxi.maxInt(1, 22, 356);
-		Assert.assertEquals(356,result);
+		Integer result = maxi.maxInt(1, 22, 356);
+		Assert.assertEquals(Integer.valueOf(356),result);
 	}
 }
