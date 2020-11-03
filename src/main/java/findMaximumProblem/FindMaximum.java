@@ -16,9 +16,9 @@ public class FindMaximum {
 
 	public static <T extends Comparable<T>> T max(T a, T b, T c) {
 		T max = a;
-		if (b.compareTo(a) > 0)
+		if (b.compareTo(max) > 0)
 			max = b;
-		if (c.compareTo(b) > 0)
+		if (c.compareTo(max) > 0)
 			max = c;
 		return max;
 	}
