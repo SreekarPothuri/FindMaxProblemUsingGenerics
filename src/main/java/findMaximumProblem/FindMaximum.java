@@ -7,11 +7,10 @@ public class FindMaximum {
 	}
 
 	public static int maxInt(Integer a, Integer b, Integer c) {
-		int max = a;
-
-		if (b.compareTo(a) > 0)
+		Integer max = a;
+		if (b.compareTo(max) > 0)
 			max = b;
-		if (c.compareTo(b) > 0)
+		if (c.compareTo(max) > 0)
 			max = c;
 		return max;
 	}
