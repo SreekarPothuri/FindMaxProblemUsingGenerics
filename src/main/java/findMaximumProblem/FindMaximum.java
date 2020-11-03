@@ -15,28 +15,28 @@ public class FindMaximum {
 	}
 
 	public static int maxInt(Integer a, Integer b, Integer c) {
-		int max = a;
-		if (b.compareTo(a) > 0)
+		Integer max = a;
+		if (b.compareTo(max) > 0)
 			max = b;
-		if (c.compareTo(b) > 0)
+		if (c.compareTo(max) > 0)
 			max = c;
 		return max;
 	}
 
 	public static float maxFloat(Float a, Float b, Float c) {
-		float max = a;
-		if (b.compareTo(a) > 0.0)
+		Float max = a;
+		if (b.compareTo(max) > 0)
 			max = b;
-		if (c.compareTo(b) > 0.0)
+		if (c.compareTo(max) > 0)
 			max = c;
 		return max;
 	}
 
 	public static String maxString(String a, String b, String c) {
 		String max = a;
-		if (b.compareTo(a) > 0)
+		if (b.compareTo(max) > 0)
 			max = b;
-		if (c.compareTo(b) > 0)
+		if (c.compareTo(max) > 0)
 			max = c;
 		return max;
 	}
