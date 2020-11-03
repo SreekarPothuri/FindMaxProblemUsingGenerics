@@ -73,5 +73,5 @@ public class TestFindMaximum {
 		FindMaximum<String> maxi = new FindMaximum<String>("Apple","Banana","Peach");
 		String result = maxi.testMaximum();
 		Assert.assertEquals("Peach", result);
-	}
+	}	
 }
